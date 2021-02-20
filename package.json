@@ -1,0 +1,11 @@
+{
+  "name": "analyst",
+  "version": "0.0.1",
+  "description": "a static analysis type checker for javascript",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "espree": "^7.3.1"
+  },
+  "type": "module"
+}
