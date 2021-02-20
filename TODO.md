@@ -4,4 +4,5 @@
  - use typescript parser to load .d.ts type definitions for built-in types like https://github.com/microsoft/TypeScript/blob/master/lib/lib.es5.d.ts
  - see how far we get with this, probably not that far
  - ignore dynamic property access
+ - for functions, we could immediately check if there is a return statement, but running through the code will give us infer info still.
  - provide a way to pass the concrete type of our `platform` to `main` for hydrogen test case
