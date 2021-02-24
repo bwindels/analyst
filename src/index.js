@@ -1,8 +1,8 @@
-import {parseModule} from "./module.js";
+import {ModuleContext} from "./module.js";
 
 async function main(file) {
-	const module = await parseModule(file);
-	module.run();
+	const module = await new ModuleContext().load(file);
+	module.link();
 }
 
 main(process.argv[2]);

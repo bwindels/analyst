@@ -70,3 +70,25 @@ export function runBody(statements, scope, imports) {
 	}
 	return scope;
 }
+
+export function runModuleBody(module) {
+	// run hoisted thingies first like exports, functions, vars?
+	// 
+	// if we find an export declaration, we first run the declaration, turn it into a Value and add it to the scope, and then resolve the export
+	// if we find an import, we turn it into an ImportValue and add it to the scope (as a const)
+}
+
+
+class ImportBinding extends ReadOnlyBinding {
+	constructor(export) {
+		this._export = export;
+	}
+
+	get value() {
+		return this._export.value.value;
+	}
+
+	get type() {
+		return this._export.value.type;
+	}
+}

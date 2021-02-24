@@ -1,3 +1,5 @@
+// we will actually set Binding's to a scope, which have a name and a value.
+
 
 export class Scope {
 	add(name, type) {
