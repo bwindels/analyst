@@ -1,4 +1,4 @@
-// we will actually set Binding's to a scope, which have a name and a value.
+// we will actually set Binding's to a scope, which have a name and an instance. an instance has a type and optionally a value.
 
 
 export class Scope {
